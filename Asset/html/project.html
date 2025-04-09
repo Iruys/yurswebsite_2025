@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../SVG/icon-logo.svg" type="image/png" sizes="25x25">
+    <link rel="stylesheet" href="../css/home.css">
+     <link rel="stylesheet" href="../css/project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="raw">
+                <div class="logo">
+                    <a href="../index.html"> <img src="../SVG/icon-logo.svg" alt="logo"></a>
+                </div>
+                <div class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</div>
+                <nav class="links">
+                    <ul>
+                        <li><a href="../index.html#home">home</a></li>
+                        <li><a href="../index.html#section-about">about</a></li>
+                        <li><a href="../index.html#footer">contact</a></li>
+                        <li><a href="../html/project.html">project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects" id="project">
+            <div class="middle">
+                <h2>My Portfolio Projects</h2>
+                <p class="quote">"You can do anything you set your mind to." <br>— Benjamin Franklin</p>
+            </div>
+            <hr class="divider">
+            <div class="project-container">
+                <!-- Project cards with consistent button styling -->
+                <div class="project-card1">
+                    <div class="overlay">Photo Editing</div>
+                    <button class="project-btn" onclick="openModal('photoModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="project-card2">
+                    <div class="overlay">Video Editing</div>
+                    <button class="project-btn" onclick="openModal('videoModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="project-card3">
+                    <div class="overlay">Logo Design</div>
+                    <button class="project-btn" onclick="openModal('logoModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="project-card4">
+                    <div class="overlay">Web Development</div>
+                    <button class="project-btn" onclick="openModal('webModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="project-card5">
+                    <div class="overlay">Computer Hardware</div>
+                    <button class="project-btn" onclick="openModal('hardwareModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="project-card6">
+                    <div class="overlay">UX Design</div>
+                    <button class="project-btn" onclick="openModal('uxModal')">View More <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Editing Modal -->
+        <div id="photoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('photoModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>Photo Editing Projects</h2>
+                    <p class="modal-subtitle">Professional image manipulation and enhancement</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>I specialize in advanced photo editing techniques including retouching, color correction,
+                            background removal, and creative compositing. My work helps businesses and individuals
+                            present their best visual identity.</p>
+                        <ul class="skills-list">
+                            <li>Adobe Photoshop</li>
+                            <li>Lightroom</li>
+                            <li>GIMP</li>
+                            <li>Color Grading</li>
+                            <li>Photo Restoration</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Portrait Retouching</h3>
+                                <p>Professional enhancement</p>
+                                <button class="gallery-btn" onclick="openModernModal('photo1')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Landscape Enhancement</h3>
+                                <p>Natural beauty amplified</p>
+                                <button class="gallery-btn" onclick="openModernModal('photo2')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Product Photography</h3>
+                                <p>E-commerce ready</p>
+                                <button class="gallery-btn" onclick="openModernModal('photo3')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Creative Compositing</h3>
+                                <p>Multiple image blending</p>
+                                <button class="gallery-btn" onclick="openModernModal('photo4')">View Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Contact for Photo Work</button>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Editing Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('videoModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>Video Editing Projects</h2>
+                    <p class="modal-subtitle">Professional video production and post-processing</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>Expert video editing services including cutting, transitions, color grading, and special
+                            effects. I create engaging content for social media, commercials, and corporate videos.</p>
+                        <ul class="skills-list">
+                            <li>Adobe Premiere Pro</li>
+                            <li>After Effects</li>
+                            <li>DaVinci Resolve</li>
+                            <li>Motion Graphics</li>
+                            <li>Color Correction</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Commercial Video</h3>
+                                <p>30-second promo</p>
+                                <button class="gallery-btn" onclick="openModernModal('video1')">View Project</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Corporate Video</h3>
+                                <p>Company profile</p>
+                                <button class="gallery-btn" onclick="openModernModal('video2')">View Project</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Documentary</h3>
+                                <p>Short film editing</p>
+                                <button class="gallery-btn" onclick="openModernModal('video3')">View Project</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Motion Graphics</h3>
+                                <p>Animated explainer</p>
+                                <button class="gallery-btn" onclick="openModernModal('video4')">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Contact for Video Work</button>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Design Modal -->
+        <div id="logoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('logoModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>Logo Design Projects</h2>
+                    <p class="modal-subtitle">Creating memorable brand identities</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>Custom logo design that captures your brand's essence. From concept to final vector files, I
+                            create logos that work across all media and sizes.</p>
+                        <ul class="skills-list">
+                            <li>Adobe Illustrator</li>
+                            <li>Brand Identity</li>
+                            <li>Typography</li>
+                            <li>Vector Graphics</li>
+                            <li>Style Guides</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Minimalist Logo</h3>
+                                <p>Clean and modern</p>
+                                <button class="gallery-btn" onclick="openModernModal('logo1')">View Process</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Mascot Logo</h3>
+                                <p>Character design</p>
+                                <button class="gallery-btn" onclick="openModernModal('logo2')">View Process</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Wordmark</h3>
+                                <p>Typography focused</p>
+                                <button class="gallery-btn" onclick="openModernModal('logo3')">View Process</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Emblem</h3>
+                                <p>Classic badge style</p>
+                                <button class="gallery-btn" onclick="openModernModal('logo4')">View Process</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Request Logo Design</button>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Development Modal -->
+        <div id="webModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('webModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>Web Development Projects</h2>
+                    <p class="modal-subtitle">Building modern, responsive websites</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>Full-stack web development services creating fast, secure, and mobile-friendly websites. From
+                            simple landing pages to complex web applications.</p>
+                        <ul class="skills-list">
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>E-commerce Site</h3>
+                                <p>Online store</p>
+                                <button class="gallery-btn" onclick="openModernModal('web1')">Visit Live Site</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Corporate Website</h3>
+                                <p>Business presence</p>
+                                <button class="gallery-btn" onclick="openModernModal('web2')">Visit Live Site</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Web Application</h3>
+                                <p>Custom dashboard</p>
+                                <button class="gallery-btn" onclick="openModernModal('web3')">View Demo</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Portfolio Site</h3>
+                                <p>Artist showcase</p>
+                                <button class="gallery-btn" onclick="openModernModal('web4')">Visit Live Site</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Discuss Your Project</button>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-codepen"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer Hardware Modal -->
+        <div id="hardwareModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('hardwareModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>Computer Hardware Projects</h2>
+                    <p class="modal-subtitle">Building and optimizing computer systems</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>Custom PC builds, hardware upgrades, and system optimization. Specializing in gaming rigs,
+                            workstations, and home server setups.</p>
+                        <ul class="skills-list">
+                            <li>PC Assembly</li>
+                            <li>Hardware Troubleshooting</li>
+                            <li>Overclocking</li>
+                            <li>Cooling Solutions</li>
+                            <li>Network Setup</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Gaming PC</h3>
+                                <p>High-performance build</p>
+                                <button class="gallery-btn" onclick="openModernModal('hardware1')">View Specs</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Workstation</h3>
+                                <p>Content creation</p>
+                                <button class="gallery-btn" onclick="openModernModal('hardware2')">View Specs</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Home Server</h3>
+                                <p>NAS setup</p>
+                                <button class="gallery-btn" onclick="openModernModal('hardware3')">View Setup</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>SFF Build</h3>
+                                <p>Compact powerhouse</p>
+                                <button class="gallery-btn" onclick="openModernModal('hardware4')">View Build</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Get a Custom Build Quote</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- UX Design Modal -->
+        <div id="uxModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('uxModal')">&times;</span>
+                <div class="modal-header">
+                    <h2>UX Design Projects</h2>
+                    <p class="modal-subtitle">Creating intuitive user experiences</p>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        <p>User-centered design process focusing on usability, accessibility, and pleasure in the
+                            interaction. From wireframes to high-fidelity prototypes.</p>
+                        <ul class="skills-list">
+                            <li>User Research</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Usability Testing</li>
+                            <li>UI Design</li>
+                        </ul>
+                    </div>
+                    <div class="modal-gallery">
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Mobile App</h3>
+                                <p>Fitness tracker</p>
+                                <button class="gallery-btn" onclick="openModernModal('ux1')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Web Dashboard</h3>
+                                <p>Analytics interface</p>
+                                <button class="gallery-btn" onclick="openModernModal('ux2')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>E-commerce Flow</h3>
+                                <p>Checkout process</p>
+                                <button class="gallery-btn" onclick="openModernModal('ux3')">View Case Study</button>
+                            </div>
+                        </div>
+                        <div class="pic" style="background-image: url('');">
+                            <div class="pic-content">
+                                <h3>Onboarding</h3>
+                                <p>New user experience</p>
+                                <button class="gallery-btn" onclick="openModernModal('ux4')">View Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="contact-btn"><i class="fas fa-paper-plane"></i> Discuss UX Project</button>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modern Modal Overlay -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modern-modal">
+                <div class="modal-header">
+                    <button class="back-btn" onclick="closeModernModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Back
+                    </button>
+                </div>
+
+                <div class="project-section highlight">
+                    <div class="project-description">
+                        <h2 id="modernModalTitle">Project Title</h2>
+                        <p id="modernModalDescription">This collection showcases my expertise in professional work. Each item was carefully processed to enhance its visual impact while maintaining natural aesthetics.</p>
+
+                        <div class="skills-used" id="modernModalSkills">
+                            <span class="skill-tag">Skill 1</span>
+                            <span class="skill-tag">Skill 2</span>
+                            <span class="skill-tag">Skill 3</span>
+                        </div>
+
+                        <a href="#" class="project-link" id="modernModalLink">View Full Project</a>
+                    </div>
+
+                    <div class="photo-collage" id="modernModalCollage">
+                        <div class="collage-item">
+                            <img src="" alt="Project Image">
+                        </div>
+                        <div class="collage-item">
+                            <img src="" alt="Project Image">
+                        </div>
+                        <div class="collage-item">
+                            <img src="" alt="Project Image">
+                        </div>
+                        <div class="collage-item">
+                            <img src="" alt="Project Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>@ydfaustino</p>
+        </footer>
+    </main>
+
+    <script src="../JS/home.js"></script>
+    <script src="../JS/project.js"></script>
+</body>
+
+</html>
